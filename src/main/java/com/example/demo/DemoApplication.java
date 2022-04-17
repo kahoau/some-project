@@ -19,9 +19,9 @@ public class DemoApplication {
 		return args -> {
 
 			// 1 1 2 3 5 8 13
-			int output = demoService.fibo(6);
-			System.out.println("fibo result: " +output);
-			// studentService.getAllStudents();
+			for (int i = 8; i > 1; i--) {
+				System.out.println("input: " + i + " fibo result: " +demoService.fibo(i));
+			}
 		};
 	}
 }
