@@ -5,4 +5,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface DemoService {
     void demo();
+
+    int fibo(int num);
 }

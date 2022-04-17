@@ -17,8 +17,11 @@ public class DemoApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(DemoService demoService, StudentService studentService) {
 		return args -> {
-			demoService.demo();
-			studentService.getAllStudents();
+
+			// 1 1 2 3 5 8 13
+			int output = demoService.fibo(6);
+			System.out.println("fibo result: " +output);
+			// studentService.getAllStudents();
 		};
 	}
 }
